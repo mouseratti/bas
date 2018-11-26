@@ -10,9 +10,10 @@
     Переменные, соглашения об именовании
     Области видимости, LEGB
     Бинарные операторы
+===================================
     IF
     While-else
-    for-else
+    for-else (range, enumerate)
     Exceptions
     assert
 
@@ -23,6 +24,7 @@
     int
     float
     String
+==================
     Tuple
     List
     Dict
