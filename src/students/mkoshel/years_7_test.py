@@ -1,14 +1,15 @@
 """
 aptitude install python3-pytest
+pytest-3
 """
 from years_7 import is_leap
 
 YEARS = (
-(2000, True),
-(2016, True),
-(2018, False),
-(2019, False),
-(2020, True),
+    (2000, True),
+    (2016, True),
+    (2018, False),
+    (2019, False),
+    (2020, True),
 )
 
 
