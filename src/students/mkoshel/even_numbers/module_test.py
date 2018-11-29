@@ -8,9 +8,11 @@ fixtures = [
         (2,11,13,15,17,18,21),
         (2,18)
     ),
-    ((2,11,14,11,15,17,19,2,14,2),(2,14)),
-    ((2,'22443*',14,11,15,17,19,2,14,2),(2,14)),
+)
 ]
+
+for inputted, expected in fixtures:
+	print(inputted, ' * ', expected)
 
 def test_even():
     for inputted, expected  in fixtures:
