@@ -1,10 +1,12 @@
-from variables import NAME, AGE, POSITION
+#!/usr/bin/env python3
+from variables import *
 print("Hello, BAS!")
 
-TEXT = """
+TEXT: str = """
 My name is {}. I'm {} years old. It's about {} days.
 My position is {}.
 """
+TEXT = None
 
 age_days = 365.0 * AGE 
 
