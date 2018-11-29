@@ -106,3 +106,8 @@ venv.bak/
 .idea/
 
 *.xls
+resources/day3/log
+
+\"(GET|PUT|POST|DELETE)\s{1,}(\/.+)\"
+
+\"([A-Z]+)\s(\/.+?)(\?.+)?\s(HTTP\/1.1.)\"

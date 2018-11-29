@@ -13,21 +13,21 @@ if __name__ == '__main__':
         stdout=open("stdout.log", "a"),
     )
     #### сбор вывода
-    result = subprocess.run('ping ya.ru -c 3',stdout=subprocess.PIPE)
+    # result = subprocess.run('ping ya.ru -c 3',stdout=subprocess.PIPE)
 
     ##### Остановка по тайм ауту
-    try:
-        result = subprocess.run('ping ya.ru'.split(),timeout=2)
-    except subprocess.TimeoutExpired:
-        print("timeout expired!!")
+    # try:
+    #     result = subprocess.run('ping ya.ru'.split(),timeout=2)
+    # except subprocess.TimeoutExpired:
+    #     print("timeout expired!!")
 
 
     ###### неблокирующий запуск
-    result = subprocess.Popen("ping ya.ru -c 4".split(), stdout=subprocess.PIPE)
-    while True:
-        if result.poll() is not None:
-            break
-        else:
-            print("process is running!!!")
+    # result = subprocess.Popen("ping ya.ru -c 4".split(), stdout=subprocess.PIPE)
+    # while True:
+    #     if result.poll() is not None:
+    #         break
+    #     else:
+    #         print("process is running!!!")
 
 
