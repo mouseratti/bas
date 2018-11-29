@@ -9,6 +9,10 @@ rpoPattern =re.compile(".*РПО")
 
 def nameDay(month,*nameANDdateRow):
     print('1111')
+
+    for asd in nameANDdateRow[0]:
+        print('ui',asd)
+
     for asd in nameANDdateRow[2]:
         print(asd)
 
