@@ -1,1 +1,1 @@
-from . import task10
+from . import msmagulov

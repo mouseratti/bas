@@ -1,8 +1,7 @@
 def even(*args):
     result = set()
     for pos in args:
-        try:
+        if isinstance(pos,int):
             if not pos % 2:
                 result.add(pos)
-        except: pass
     return tuple(result)

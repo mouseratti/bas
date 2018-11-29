@@ -1,8 +1,7 @@
-NAME = "Mikhail K."
-POSITION = 'engineer'
-AGE = 30
-
-_local = 0
-
-
-def f(): pass
+a = 321
+b = 23
+c = -21
+d = 0
+e = 4123
+f = 512
+g = 4.1
