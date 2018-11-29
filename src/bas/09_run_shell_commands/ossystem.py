@@ -1,4 +1,6 @@
 import os
 
-os.system("ls -l")
+result = os.system("sleep 5")
+print(result)
+
 # os.system("ping ya.ru")

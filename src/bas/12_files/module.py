@@ -8,10 +8,10 @@ if __name__ == '__main__':
     f.write("we need to close\n")
     # f.flush()
     f.seek(0)
-    # result = f.read(10)
+    result = f.read(10)
     # print(result)
-    # f.close()
-
+    f.close()
+    if bool(f.readline()) is False:
 
     for line in f.readlines():
         print(line)

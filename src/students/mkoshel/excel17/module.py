@@ -1,7 +1,7 @@
 # https://habr.com/post/99923/
 # https://habr.com/post/232291/
 import xlrd
-from students.mkoshel.utils import get_workers_on_day
+from students.mkoshel.excel17.utils import get_workers_on_day
 
 if __name__ == '__main__':
     xlsfile = xlrd.open_workbook('tabel.xls', formatting_info=True)
