@@ -10,7 +10,7 @@ if __name__ == '__main__':
     ############ Перенаправление вывода в файл
     result = subprocess.run(
         'ping ya.ru -c 2'.split(),
-        stdout=open("stdout.log", "a"),
+        stdout=open("stdout.log.log", "a"),
     )
     #### сбор вывода
     result = subprocess.run('ping ya.ru -c 3',stdout=subprocess.PIPE)

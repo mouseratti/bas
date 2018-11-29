@@ -106,3 +106,4 @@ venv.bak/
 .idea/
 
 *.xls
+log.log
