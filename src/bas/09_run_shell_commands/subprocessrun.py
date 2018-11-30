@@ -24,6 +24,7 @@ if __name__ == '__main__':
         result = subprocess.run('ping ya.ru'.split(),timeout=2)
     except subprocess.TimeoutExpired:
         print("timeout expired!!")
+        result.kill()
 
 
     ###### неблокирующий запуск
