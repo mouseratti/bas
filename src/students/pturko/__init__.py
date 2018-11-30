@@ -1,0 +1,1 @@
+from .task_10 import  f1

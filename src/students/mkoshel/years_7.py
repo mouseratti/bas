@@ -1,17 +1,24 @@
-"""
-7) Дано натуральное число. 
-Требуется определить, является ли год с данным номером високосным. 
-Если год является високосным, то выведите YES, иначе выведите NO. 
-Напомним, что в соответствии с григорианским календарем, 
-год является високосным, если его номер кратен 4, 
-но не кратен 100, а также если он кратен 400.
-"""
 
 
 def is_leap(year):
-    if not year % 4 and year % 100: return True
-    if not year % 400: return True
-    return False
+	x1=False
+	x2=False
+	x3=False
 
+	if year%4==0 : 
+		x1=True
+	if year%100==0 :
+		x2=True 
+	if year%400==0 :
+		x3=True
 
+	if x1 and x3:
+		return True
+	elif x1 or x3:
+		if x2==False:
+			return True
+		else:
+			return False
+	else:
+		return False
 
