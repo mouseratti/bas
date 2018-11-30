@@ -1,6 +1,6 @@
 # https://docs.python.org/3/library/argparse.html
 import argparse
-
+import sys
 def make_parser():
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('integers', metavar='N', type=int, nargs='+',
@@ -9,8 +9,6 @@ def make_parser():
                         const=sum, default=max,
                         help='sum the integers (default: find the max)')
     return parser
-
-
 if __name__ == '__main__':
     parser = make_parser()
     args = parser.parse_args()

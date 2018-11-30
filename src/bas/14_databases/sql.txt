@@ -1,0 +1,4 @@
+https://habr.com/post/321510/
+https://www.python.org/dev/peps/pep-0249/
+
+
