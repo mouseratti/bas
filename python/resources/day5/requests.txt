@@ -1,0 +1,22 @@
+1) Необходимо сделать запрос к
+https://jsonplaceholder.typicode.com/posts
+2) Полученные данные (первые 20 объектов сохранить в файл)
+3*) Создайте новый объект post через HTTP-API
+(нужно отправить json через метод POST на url
+https://jsonplaceholder.typicode.com/posts)
+Убедитесь, что запрос прошел корректно json.dumps(your_dict)
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+4) Все полученные посты необходимо записать
+в sqlite-базу данных (дату создания берем из
+time.time
+)
+5) Обновить title и body  поста с id 99
+на значения 'bas', 'python course'
+
+

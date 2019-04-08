@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: myapp
+    ports:
+      - "4000:80"
+    environment:
+      - NAME=user1
+  redis:
+    image: redis

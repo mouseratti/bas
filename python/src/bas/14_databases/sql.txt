@@ -1,0 +1,13 @@
+https://habr.com/post/321510/
+https://www.python.org/dev/peps/pep-0249/
+import time
+
+QUERY = """
+insert into posts
+    (user_id, title, body, created) values
+(?,?,?,?)
+"""
+
+cursor.execute(QUERY,
+(1, 'title', 'body',time.time()))
+connection.commit()

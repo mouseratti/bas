@@ -1,0 +1,45 @@
+version: '2.1'
+services:
+  db:
+    image: registry.local:5001/mfc-postgresql:v3.0.2-SNAPSHOT-2018.08.17.145015-commit
+    ports:
+      - "5432:5432"
+    container_name: db
+
+  rabbitmq:
+    image: registry.local:10443/rabbitmq:3-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=mfc
+      - RABBITMQ_DEFAULT_PASS=password
+    container_name: mq
+
+  etcd:
+    image: registry.local:5001/mfc-etcd-local:v1.04-commit
+    ports:
+      - "2379:2379"
+    container_name: conf
+
+  websocket:
+    image: registry.local:5001/mfc-websocket:int
+    depends_on:
+      - etcd
+      - rabbitmq
+    hostname: "websocket.local"
+    ports:
+      - "8083:8083"
+
+  auth:
+    image: registry.local:5001/mfc-auth:2.1.10
+    ports:
+      - "2848:2848"
+    hostname: "oauth.local"
+    depends_on:
+      - db
+    environment:
+      - AUTH_DB_HOST=db
+      - CONFIG_SERVICE_HOST=conf
+    container_name: auth
+

@@ -1,0 +1,8 @@
+# https://docs.python.org/3/library/argparse.html
+# https://docs.python.org/3.6/howto/argparse.html
+1) Сохранить текст из задачи 17 в файл
+2) Написать скрипт, принимающий на вход:
+    параметр filename имя_файла
+    -m, --most_popular N
+3) вычитать текст из переданного по имени файла, отобразить N часто
+встречающихся в тексте слов
