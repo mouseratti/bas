@@ -3,7 +3,20 @@ services:
   nexus:
     image: sonatype/nexus3
     ports:
-      # - "5001:5001"
+      - "5001:5001"
       - "8081:8081"
     volumes:
-      - /tmp/nexus:/nexus-data
+      - nexus-volume:/nexus-data
+
+
+volumes:
+  nexus-volume:
+    driver_opts:
+       type: bind
+       device:  /tmp/nexus
+       o: bind
+  named-volume:
+
+  tmpfs-volume:
+    driver_opts:
+       type: tmpfs
