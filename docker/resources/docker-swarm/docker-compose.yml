@@ -1,0 +1,23 @@
+version: "3"
+services:
+  apache:
+    image: francois/apache-hostname 
+    deploy:
+      mode: global
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "18081:80"
+  visualiser:
+    image: dockersamples/visualizer
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - "18080:8080"
