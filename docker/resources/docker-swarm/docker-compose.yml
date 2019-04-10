@@ -3,7 +3,7 @@ services:
   apache:
     image: francois/apache-hostname 
     deploy:
-      mode: global
+      replicas: 3
       resources:
         limits:
           cpus: "0.1"
@@ -12,6 +12,8 @@ services:
         condition: on-failure
     ports:
       - "18081:80"
+    networks:
+      - demo-network
   visualiser:
     image: dockersamples/visualizer
     deploy:
@@ -21,3 +23,12 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
     ports:
       - "18080:8080"
+    networks:
+      - demo-network
+
+networks:
+  demo-network:
+    driver: overlay
+
+
+# docker run -it --rm -t devth/alpine-bench -n3 http://google.com/

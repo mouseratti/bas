@@ -6,7 +6,7 @@ services:
       - "5001:5001"
       - "8081:8081"
     volumes:
-      - nexus-volume:/nexus-data
+      - tmpfs-volume:/nexus-data
 
 
 volumes:
