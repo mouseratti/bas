@@ -1,0 +1,10 @@
+version: "3"
+services:
+  c1:
+    image: francois/apache-hostname 
+    ports:
+      - "9091:80"
+  c2:
+    image: francois/apache-hostname
+    ports:
+      - "9092:80"
