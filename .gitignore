@@ -106,3 +106,6 @@ venv.bak/
 .idea/
 
 *.xls
+
+nodejs/node_modules/*
+nodejs/resources/node_modules/
