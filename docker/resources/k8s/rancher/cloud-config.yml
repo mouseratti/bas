@@ -1,0 +1,14 @@
+rancher:
+  network:
+    interfaces:
+      eth0:
+        address: 192.168.0.106/24
+        gateway: 192.168.0.1
+        mtu: 1500
+        dhcp: false
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBBlWiBLjyPxLL2DhTHJNcNcKb0E+kS7LhoPVqwIP8/+Swc1MFEVyk52l9kG2qz6iRjlkXAUeZKt6bQzOwCxrOUxEVkYVQ2+bD9DATKfD2diFtWG5vmY9kLeNQfp1jPB8sQc9f/s3HG5k9EbOZ3jAiVIvjKLxufF8bxYfce3WcsilUOh2JoQd4V6HB6O4qCIZ8uo2VQm+WzDmWj2MHRqV+nXrh+fEHkca2n2ci2g54/4AooBMg+nxWTfVtvgLWulcdfSFzOt+CnYjGVi40kTeIU5EhSz0rj6djcBt7puUWUPK5aH/qRYpY9HIAQS4LhgmCnx2pZUMJjTmvuNVJ4pej mfast@e31
