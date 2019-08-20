@@ -56,7 +56,7 @@ list_from_string.append('new element')
 # Sorts objects of list, use compare func if given
 
 
-# tuples
+################ tuples
 # May be considered as immutable version of list
 
 tup1 = ('physics', 'chemistry', 1997, 2000)
@@ -87,7 +87,12 @@ d2  = dict()
 # Keys are unique within a dictionary while values may not be.
 # The values of a dictionary can be of any type,
 # but the keys must be of an immutable data type such as strings, numbers, or tuples.
-d3 = {'key1': 'value2', 'k2': 'another string value', 2: 3, 3: 3, (1,2,3): [4,5,6]}
+d3 = {
+    'key1': 'value2',
+    'k2': 'another string value',
+    2: 3, 3: 3,
+    (1,2,3): [4,5,6]
+}
 
 
 # To access dictionary elements, you can use the familiar square brackets along

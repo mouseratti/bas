@@ -1,5 +1,6 @@
 """
-A function is a block of organized, reusable code that is used to perform a single, related action.
+A function is a block of organized, reusable code that is used to perform a single,
+related action.
  Functions provide better modularity for your application and a high degree of code reusing.
  As you already know, Python gives you many built-in functions like print(), len, max etc.
  but you can also create your own functions. These functions are called user-defined functions.
@@ -9,7 +10,7 @@ You can define functions to provide the required functionality.
 Here are simple rules to define a function in Python.
 
 Function blocks begin with the keyword def followed by the function name
-and parentheses ( ( ) ).
+and parentheses ( ).
 
 Any input parameters or arguments should be placed within these parentheses.
 You can also define parameters inside these parentheses.
@@ -90,8 +91,8 @@ print_me()
 # the Python interpreter is able to use the keywords provided to match the values with parameters.
 def printinfo(name, age):
     "This prints a passed info into this function"
-    print "Name: ", name
-    print "Age ", age
+    print("Name: ", name)
+    print("Age ", age)
     return
 
 
@@ -138,3 +139,12 @@ def print_args( arg1, *args ):
 # Now you can call printinfo function
 print_args( 10 )
 print_args( 70, 60, 50 )
+
+
+
+# full-signatured function looks like this
+def full_signatured(pos_arg1, *args, **kwargs):
+    """function docstring"""
+    print(pos_arg1)
+    print(args)
+    print(kwargs)

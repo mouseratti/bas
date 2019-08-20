@@ -16,43 +16,150 @@ With given N count the result of this expression:
 4) 	Fibonacci sequence
 With given N found the  N-th Fibonacci number. 
 For example,  5th number will be 1,1,2,3,5 - > 5
-5)	How much time?
-With given N seconds from the beginning of the day, show out what time digital watches are showing . The format of output is “HH:mm:ss”
 
-6)	Format sql query
-Create an sql query that adds users 
-“John Smith: 26”, “Mikhail Koshel: 30”, “Mary Christmas: 6”
-Into a table  “users” with columns “name”, “surname”,”age”
-7)	Generate configuration keys
-Some application  has configuration properties in this format:
-/system/configs/project-depcode/[<project-id>]: “<depcode>”
-Project id is created from depcode with these rules: 1000<depcode><control-number>
-Control number is the last digit of the summary of all previous digits in project-id
-For example:
-depcode = 61001, project-id = 1000610019, where 9 is the last digit of the sum  1 + 0 + 0 + 0 + 6 + 1 + 0 + 0 + 1 = 9
-depcode = 61011, project-id = 1000610010, where 0 is the last digit of the sum 1 + 0 + 0 + 0 + 6 + 1 + 0 + 1 + 1 = 10
-Create config properties for all depcodes from 61001 to 61011
+#### Strings
+5)  Write a Python script that takes input from the user and displays
+that input back in upper and lower cases.
+
+6) Write a Python program to remove the N-th
+   index character from a nonempty string.
+
+7)  Write a Python program to remove the characters which have
+odd index values of a given string.
+
+7.5) make program that hides all vovels characters in given text
+     For example:
+     	“abc” -> '*bc'
+     	“mama” -> 'm*m*'
+
+7.6)	How much time?
+With given N seconds from the beginning of the day,
+show out what time digital watches are showing . The format of output is “HH:mm:ss”
+
+7.7)	How much money?
+With given amount of KZT, convert it to USD and print result in this format:
+"X tenge equals Y dollars Z cents"
+
+7.8)    Write a Python program to print the index of the character in a string.
+Sample string: Chevron
+     Expected output:
+     Current character C position at 0
+     Current character h position at 1
+     Current character e position at 2
+     ...
+
+
+
+######### Lists, tuples
+
 8)	Reverse Word Order
 Write a program that asks the user for a long string containing multiple words. Print back to the user the same string, except with the words in backwards order. For example, say I type the string:
-
   My name is Michele ->   Michele is name My
+
 9)	Write a Python program to sum all the items in a list.
 
 10)	Write a Python program to get the largest number from a list.
-
-11)	Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given list of non-empty tuples.
-Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
-Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
 
 12)	Merge digits
 Write a Python program to convert a list of multiple integers into a single integer
 Sample list: [11, 33, 50]
 Expected Output: 113350
-Practice 2
-13	String to boolean
-Write a function that converts any string value to its boolean representation. The input string could be one of “True”, “False”, “yes”, “no”, “1”, “0” sequence;
 
-14	Is divide by?
+13) Write a program to remove string elements from given list:
+For example: [1, 'two', '3', 4] -> [1,4]
+
+14) Write a Python function that takes two lists and returns their common and different
+elements:
+For example:
+    input:
+        [1,2,4]
+        ['three', 4, 'six']
+    output:
+        Both lists have common elements: 4
+        Different elements: 1,2, 'three', 'six'
+
+16)  Write a Python program to convert a list of characters into a string.
+Example: ['w','o','r','d'] -> word
+
+17) Write a Python program to find an average value of the list of numbers
+Example: [2,4,3] -> average value of 3 elements is 3
+
+
+
+########### Dictionaries
+20)     Write a Python program to count repeated characters in a string. Go to the editor
+Sample string: 'thequickbrownfoxjumpsoverthelazydog'
+Expected output :
+o 4
+e 3
+u 2
+h 2
+r 2
+t 2
+
+21)     Write a program to separate given list by types:
+For example:
+    input: [1, 'two', '3', 4, [8], (1,2)]
+    output:
+        int: 1, 4
+        str: 'two', '3'
+        list: [8]
+        tuple: (1,2)
+
+
+22)     Write a program that gets expression from input and outputs it result
+expression accepts this format <number> <operator> <number>
+<number> - digit from 1 to 5
+<operator> - + or -
+Example:
+input       output
+5 + 3       5 + 3 equals eight
+1 - 5       1 - 5 equals minus four
+
+23)     Write a Python script to generate and print a dictionary that contains a number
+(between 1 and N) in the form (x, x*x)
+Example: N = 5
+Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+24)     Write a Python program to map two lists into a dictionary
+Example:['one', 'two', 'three']
+    [1,2,3]
+Output: {'one': 1, 'two': 2, 'three': 3}
+
+25)     Write a Python program to get the top three items in a shop. Go to the editor
+Sample data: {'item1': 45.50, 'item2':35, 'item3': 41.30, 'item4':55, 'item5': 24}
+Expected Output:
+    item4 55
+    item1 45.5
+    item3 41.3
+
+
+26*)	With given text:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+In at nibh nibh. Nulla eu orci a quam consectetur posuere non vitae turpis.
+Maecenas nulla tellus, vehicula quis erat eget, bibendum commodo libero.
+Quisque aliquet eget nibh eu blandit.Maecenas vitae lacus vulputate sem varius viverra.
+Nunc semper risus in lectus maximus ultrices. Sed placerat rhoncus leo, at iaculis leo auctor
+dapibus. Donec egestas nibh ut nulla gravida sagittis. Nullam vel lacinia magna.
+Nunc ac molestie quam. Suspendisse in sem nisl. Cras vitae justo vel leo pretium scelerisque
+vel porttitor lectus.Nulla vestibulum leo eget rutrum congue. Sed vitae ultricies neque,
+sed cursus magna. Vivamus vulputate, lacus et porttitor finibus, sem augue pellentesque dui, quis euismod velit elit at neque.
+Curabitur vitae fringilla ante. Nulla vitae lectus sit amet mauris varius ornare.
+Mauris at dolor a elit vulputate convallis. Fusce rhoncus tempor mauris et fermentum.
+Phasellus condimentum vel odio quis scelerisque. Integer porta accumsan tortor, ut fringilla quam sollicitudin.
+
+Count how often letters occur in this text. Also count total number of all vowels and all consonants
+	Result should look like this:
+	Vovels: 100
+	Consonants: 500
+‘a’ letter: 30
+‘b’ letter: 20
+
+
+
+######### Functions
+30) 	Is divide by?
 create function is_divide_by to check if an integer number is divisible by each out of two arguments.
 A few cases:
 (-12, 2, -6)  ->  true
@@ -62,65 +169,82 @@ A few cases:
 (4, 1, 4)     ->  true
 (15, -5, 3)   ->  true
 
-15	Binary arithmetic
+31      Binary arithmetic
 Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
 The binary number returned should be a string.
 
-16	Descending Order
+32      Descending Order
 Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 Examples:
 Input: 21445 Output: 54421
 Input: 145263 Output: 654321
 Input: 1254859723 Output: 9875543221
 
-17	Intersection of lists
+33      Intersection of lists
 Write a function that gets two lists of numbers and outputs a list with all numbers which are exist in both of these given lists
 
-18	Make maximum!
+34      Make maximum!
 Implement a function that takes as input three variables, and returns the largest of the three. Do this without using the Python max() function!
 
-19	Sum all args 
+35      Sum all args
 Write a Python function to sum all the inputted args
 summarize(8, 2, 3, 0, 7)
 Expected Output : 20 
 
-20)	 Rewrite task 3 as a function
-21)	Write a function for checking the speed of drivers. This function should have one parameter: speed.
+36      Write a function for checking the speed of drivers. This function should have one parameter: speed.
 If speed is less than 70, it should print “Ok”.
 Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
 If the driver gets more than 12 points, the function should print: “License suspended”
-Practice 3
-22)	Write a function to check if a string contains all letters of the English alphabet
 
-23)	Write a function to create a Caesar encrypted string from a given text.
-In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
+37      Write a function to check if a string contains all letters of the English alphabet
 
-24)	Write a Python function to create the HTML string with tags around the word
+38      Write a function to create a Caesar encrypted string from a given text.
+In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher,
+Caesar's code or Caesar shift, is one of the simplest and most widely known encryption
+techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced
+by a letter some fixed number of positions down the alphabet.
+For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.
+The method is named after Julius Caesar, who used it in his private correspondence.
+
+39) 	Write a Python function to create the HTML string with tags around the word
 Sample function and result : 
 add_tags('i', 'Python') -> '<i>Python</i>'
 add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
 
-25)	Write a function for division the number into groups by a multiple of 1000
+40) 	Write a function for division the number into groups by a multiple of 1000
 Example:
 division(1234567, “,”) -> “1,234,567”
 
 
-Practice 4, 5
-26)	Find all prime numbers from 1 to 1000 (use filter)
-27)	Re-implement the task #3 with the map function
-28)	Write a function to get the maximum and minimum value in a dictionary.
+########## Functions 2
+40)	    Find all prime numbers from 1 to 1000 (use filter)
+41)     Re-implement the task #3 with the map function
+42)	    Write a function to get the maximum and minimum value in a dictionary.
 	d = {‘a’: 0, ‘b’: 10}
 	get_value(d, ‘min’) -> 0
 	get_value(d, ‘max’) -> 10
 
-29)	Write a function to convert a list into a nested dictionary of keys:
+43)     Write a function to convert a list into a nested dictionary of keys:
 	to_dict([1,2,3,4]) -> {1: {2:{3:4} } }
 
-30)	Write a function that converts dictionary keys to its values:
+44)     Write a function that converts dictionary keys to its values:
 	convert({‘key’: ‘value’}) -> {‘value’: ‘key’} 
 
-31)	With given text: 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at nibh nibh. Nulla eu orci a quam consectetur posuere non vitae turpis. Maecenas nulla tellus, vehicula quis erat eget, bibendum commodo libero. Quisque aliquet eget nibh eu blandit. Maecenas vitae lacus vulputate sem varius viverra. Nunc semper risus in lectus maximus ultrices. Sed placerat rhoncus leo, at iaculis leo auctor dapibus. Donec egestas nibh ut nulla gravida sagittis. Nullam vel lacinia magna. Nunc ac molestie quam. Suspendisse in sem nisl. Cras vitae justo vel leo pretium scelerisque vel porttitor lectus.Nulla vestibulum leo eget rutrum congue. Sed vitae ultricies neque, sed cursus magna. Vivamus vulputate, lacus et porttitor finibus, sem augue pellentesque dui, quis euismod velit elit at neque. Curabitur vitae fringilla ante. Nulla vitae lectus sit amet mauris varius ornare. Mauris at dolor a elit vulputate convallis. Fusce rhoncus tempor mauris et fermentum. Phasellus condimentum vel odio quis scelerisque. Integer porta accumsan tortor, ut fringilla quam sollicitudin a.
+45)     With given text:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+In at nibh nibh. Nulla eu orci a quam consectetur posuere non vitae turpis.
+Maecenas nulla tellus, vehicula quis erat eget, bibendum commodo libero.
+Quisque aliquet eget nibh eu blandit.Maecenas vitae lacus vulputate sem varius viverra.
+Nunc semper risus in lectus maximus ultrices. Sed placerat rhoncus leo, at iaculis leo auctor
+dapibus. Donec egestas nibh ut nulla gravida sagittis. Nullam vel lacinia magna.
+Nunc ac molestie quam. Suspendisse in sem nisl. Cras vitae justo vel leo pretium scelerisque
+vel porttitor lectus.Nulla vestibulum leo eget rutrum congue. Sed vitae ultricies neque,
+sed cursus magna. Vivamus vulputate, lacus et porttitor finibus, sem augue pellentesque dui, quis euismod velit elit at neque.
+Curabitur vitae fringilla ante. Nulla vitae lectus sit amet mauris varius ornare.
+Mauris at dolor a elit vulputate convallis. Fusce rhoncus tempor mauris et fermentum.
+Phasellus condimentum vel odio quis scelerisque. Integer porta accumsan tortor, ut fringilla quam sollicitudin.
+
 Count how often letters occur in this text. Also count total number of all vowels and all consonants
 	Result should look like this: 
 	Vovels: 100
@@ -128,70 +252,39 @@ Count how often letters occur in this text. Also count total number of all vowel
 ‘a’ letter: 30
 ‘b’ letter: 20
 
-32)	 Write decorator that can cache the results of the function
-For example:
-	@cached
-	def count_sqrt(x=1):
-		return x*x
-count_sqrt(5) -> 25 # computed
-count_sqrt(5) -> 25 # extracted from cache
 
-33) 	Create decorator that hides all vovels characters in outputted text
-For example:
-	@hide_vovels
-	def multiple_word(word=””):
-		return word * 2
-	multiple_word(“abc”) -> “*bc*bc”
-	multiple_word(“ma”) -> “m*m*”
+########### Modules \ packages
+40)	Place one of your previous function to its own module and use it into main.py
+41)	Create package containing your module from task 34, make it runnable (python -m your_module)
+42)	Create new virtual environment in catalog .virtual_env
+43)	Install package PyYaml with version 5.1 inside your environment
 
 
-Practice 6
-
-34)	Place one of your previous function to its own module and use it into main.py
-35)	Create package containing your module from task 34, make it runnable (python -m your_module)
-34)	Create new virtual environment, install your package into it, check.
-35)	Install package PyYaml with version 5.1 inside your environment
-
-
-Practice 7
+############# classes
 
 
 Practice 8 Classes
-41)	a)Write a Python class named Circle constructed by a radius
-b)Add method returning the area of the circle
-c) Add method returning the perimeter of a circle
+50)
+    a)Write a Python class named Circle constructed by a radius
+    b)Add method returning the area of the circle
+    c) Add method returning the perimeter of a circle
 
-42)	Add to your class Circle ability to add instances. 
+51)     Add to your class Circle ability to add instances.
 	Expression с1 + с2 should return sum of squares of both circles
 
-43)	a)Write a python class Property with fields ‘name’ and ‘value’. (p = Property(‘group’, ‘root’))
-b)Then create classes XMLMixin, which implements method to_html(), returning ‘property’ in this way: ‘<name>value</name>’
-c) Create class XMLProperty, derived from both previous classes.
+52)
+    a)Write a python class Property with fields ‘name’ and ‘value’. (p = Property(‘group’, ‘root’))
+    b)Then create classes XMLMixin, which implements method to_html(), returning ‘property’ in this way: ‘<name>value</name>’
+    c) Create class XMLProperty, derived from both previous classes.
 	d) create class JsonMixin, returning ‘property’ as a json string
 	e) Create mega-class XMLJsonProperty which is inherited from all these classes
 
-44)	Create class FIlterModule with method default(value, default_value); method should return ‘value’ or ‘default_value’ if ‘value’ doesn’t exist. (Ansible custom filter plugin )
-
-45)	
-
-46)	
+53)     Create class FIlterModule with method default(value, default_value); method should return ‘value’ or ‘default_value’ if ‘value’ doesn’t exist. (Ansible custom filter plugin )
 
 
 Practice 9 Class decorators
 
 47) Rewrite task 32 with class decorator
-
-48) create configurable decorator delay that accepts number of seconds to delay the result of wrapped function.
-For example:
-	@delay(1)
-	def return_one(): return 1
-	@delay(2)
-	def return_two(): return 2
-	
-	return_one() -> 1 # sleeps 1 second
-	return_two() -> 2 # sleeps 2 seconds
-
-
 
 Practice 10 Standard library
 49) 	Rewrite task 31 with Counter

@@ -1,0 +1,75 @@
+10)     Format sql query
+Create an sql query that adds users
+('John Smith: 26', 'Mikhail Koshel: 30', 'Mary Christmas: 6')
+Into a table  “users” with columns “name”, “surname”,”age”
+
+20)      String to boolean
+Write a function that converts any string value to its boolean representation. The input string could be one of “True”, “False”, “yes”, “no”, “1”, “0” sequence;
+
+
+30)      Generate configuration keys
+Some application  has configuration properties in this format:
+/system/configs/project-depcode/[<project-id>]: “<depcode>”
+Project id is created from depcode with these rules: 1000<depcode><control-number>
+Control number is the last digit of the summary of all previous digits in project-id
+For example:
+depcode = 61001, project-id = 1000610019, where 9 is the last digit of the sum  1 + 0 + 0 + 0 + 6 + 1 + 0 + 0 + 1 = 9
+depcode = 61011, project-id = 1000610010, where 0 is the last digit of the sum 1 + 0 + 0 + 0 + 6 + 1 + 0 + 1 + 1 = 10
+Create config properties for all depcodes from 61001 to 61011
+
+
+40)      Write a Python program to get a list, sorted in increasing order by the last element in each tuple from a given list of non-empty tuples.
+Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
+
+
+
+50)      Find all prime numbers from 1 to 1000 (use filter)
+
+
+60)      Write a function to create a Caesar encrypted string from a given text.
+In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher,
+Caesar's code or Caesar shift, is one of the simplest and most widely known encryption
+techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced
+by a letter some fixed number of positions down the alphabet.
+For example, with a left shift of 3, D would be replaced by A, E would become B, and so on.
+The method is named after Julius Caesar, who used it in his private correspondence.
+    a)  Write autotest with unittest
+
+
+
+70)     Write decorator that can cache the results of the function
+For example:
+	@cached
+	def count_sqrt(x=1):
+		return x*x
+count_sqrt(5) -> 25 # computed
+count_sqrt(5) -> 25 # extracted from cache
+    a)  Write autotest with unittest and mock
+
+
+
+80) 	Create decorator that hides all vovels characters in outputted text
+For example:
+	@hide_vovels
+	def multiple_word(word=””):
+		return word * 2
+	multiple_word(“abc”) -> “*bc*bc”
+	multiple_word(“ma”) -> “m*m*”
+    a)  Write autotest with unittest and mock
+
+
+90)     create configurable decorator called delay that accepts number of seconds
+to delay the result of wrapped function.
+        For example:
+        	@delay(1)
+        	def return_one(): return 1
+        	@delay(2)
+        	def return_two(): return 2
+
+        	return_one() -> 1 # sleeps 1 second
+        	return_two() -> 2 # sleeps 2 seconds
+        a) Write autotests, mock the sleep
+
+100)    Rewrite task 70 with class-based decorator
+        a)  write autotests

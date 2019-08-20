@@ -85,8 +85,6 @@ print(int(5), int(5.3), int('5'))  # convert to int
 # **= Exponent AND	Performs exponential (power) calculation on operators and assign value to the left operand	c **= a is equivalent to c = c ** a
 # //= Floor Division	It performs floor division on operators and assign value to the left operand	c //= a is equivalent to c = c // a
 
-
-
 ###### strings
 a = 'string'
 
@@ -132,3 +130,4 @@ print(a[:2])
 ### in operator to check affiliation of a symbol to a string
 'a' in 'abc'
 'd' in 'abc'
+'f' not in 'abc'
