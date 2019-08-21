@@ -107,7 +107,8 @@ For example:
         tuple: (1,2)
 
 
-22)     Write a program that gets expression from input and outputs it result
+22)     Write a program that gets expression from input and
+outputs it result
 expression accepts this format <number> <operator> <number>
 <number> - digit from 1 to 5
 <operator> - + or -
@@ -245,9 +246,10 @@ Curabitur vitae fringilla ante. Nulla vitae lectus sit amet mauris varius ornare
 Mauris at dolor a elit vulputate convallis. Fusce rhoncus tempor mauris et fermentum.
 Phasellus condimentum vel odio quis scelerisque. Integer porta accumsan tortor, ut fringilla quam sollicitudin.
 
-Count how often letters occur in this text. Also count total number of all vowels and all consonants
+Count how often letters occur in this text.
+Also count total number of all vowels and all consonants
 	Result should look like this: 
-	Vovels: 100
+	vowels: 100
 	Consonants: 500
 ‘a’ letter: 30
 ‘b’ letter: 20
@@ -260,37 +262,44 @@ Count how often letters occur in this text. Also count total number of all vowel
 43)	Install package PyYaml with version 5.1 inside your environment
 
 
+##### Work with files
+50)     a) read file tasks.txt from your script
+        b) count lines in this file
+        c) write first 10 strings from it into new file 10.txt
+
+51)     a) Move the text from task 45 into a file.
+        b) read text from it
+        c) Make task 45 and write results into a file result.txt
+
+
+
+
+
+
 ############# classes
 
 
 Practice 8 Classes
-50)
+70)
     a)Write a Python class named Circle constructed by a radius
     b)Add method returning the area of the circle
     c) Add method returning the perimeter of a circle
 
-51)     Add to your class Circle ability to add instances.
+71)     Add to your class Circle ability to add instances.
 	Expression с1 + с2 should return sum of squares of both circles
 
-52)
+72)
     a)Write a python class Property with fields ‘name’ and ‘value’. (p = Property(‘group’, ‘root’))
     b)Then create classes XMLMixin, which implements method to_html(), returning ‘property’ in this way: ‘<name>value</name>’
     c) Create class XMLProperty, derived from both previous classes.
 	d) create class JsonMixin, returning ‘property’ as a json string
 	e) Create mega-class XMLJsonProperty which is inherited from all these classes
 
-53)     Create class FIlterModule with method default(value, default_value); method should return ‘value’ or ‘default_value’ if ‘value’ doesn’t exist. (Ansible custom filter plugin )
+73)     Create class FIlterModule with method default(value, default_value); method should return ‘value’ or ‘default_value’ if ‘value’ doesn’t exist. (Ansible custom filter plugin )
 
-
-Practice 9 Class decorators
-
-47) Rewrite task 32 with class decorator
 
 Practice 10 Standard library
-49) 	Rewrite task 31 with Counter
-
-50) 	Rewrite task 31 with defaultdict
-
-51) 	Run command ‘ping google.com’ from python script
-
-52) 	Rewrite the task 3 by getting the n from program arguments
+80) 	Rewrite task 45 with Counter
+82) 	Rewrite task 45 with defaultdict
+83) 	Run command ‘ping google.com’ from python script
+84) 	Rewrite the task 3 by getting the n from program arguments
