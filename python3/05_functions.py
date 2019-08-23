@@ -33,10 +33,11 @@ that they were defined.
 """
 
 
-def print_me(inputted):
+
+def increment_arg(inputt=0):
     "This prints a passed string into this function"
-    print(inputted)
-    return
+    return inputt + 1
+
 
 
 # Now you can call printme function
@@ -139,7 +140,6 @@ def print_args( arg1, *args ):
 # Now you can call printinfo function
 print_args( 10 )
 print_args( 70, 60, 50 )
-
 
 
 # full-signatured function looks like this

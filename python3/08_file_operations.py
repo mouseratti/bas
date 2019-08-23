@@ -73,9 +73,11 @@ If the file does not exist, it creates a new file for reading and writing.
 
 # Open a file
 fo = open("filename.txt", "a+")
+fo.read() # You can't read closed object
 fo.write( "Python is a great language.\nYeah its great!!\n")
 fo.close() # close non-used file
-fo.read() # You can't read closed object
+fo.read()
+fo = None
 
 # Python automatically closes a file when the reference
 # object of a file is reassigned to another file.
@@ -84,8 +86,11 @@ fo.read() # You can't read closed object
 # when dealing with file objects.
 # The advantage is that the file is properly closed after
 # its suite finishes, even if an exception is raised at some point.
-with open("foo.txt") as f: # with operator clothes file for you
-    f.read()
+with open("file2.txt", "w") as destination:
+    with open("foo.txt", "a+") as fo: # with operator clothes file for you
+        array = fo.readlines()
+        # fo.seek(0)
+        fo.readlines() == []
 
 # To read a file’s contents, call f.read(size),
 # which reads some quantity of data and returns it as a string

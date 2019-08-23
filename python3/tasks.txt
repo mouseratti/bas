@@ -192,12 +192,18 @@ Write a Python function to sum all the inputted args
 summarize(8, 2, 3, 0, 7)
 Expected Output : 20 
 
-36      Write a function for checking the speed of drivers. This function should have one parameter: speed.
+36      Write a function for checking the speed
+of drivers.
+This function should have one parameter: speed.
 If speed is less than 70, it should print “Ok”.
-Otherwise, for every 5km above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
-If the driver gets more than 12 points, the function should print: “License suspended”
+Otherwise, for every 5km above the speed limit (70),
+it should give the driver one demerit point and
+print the total number of demerit points. For example, if the speed is 80, it should print: “Points: 2”.
+If the driver gets more than 12 points,
+the function should print: “License suspended”
 
-37      Write a function to check if a string contains all letters of the English alphabet
+37      Write a function to check if a string
+ contains all letters of the English alphabet
 
 38      Write a function to create a Caesar encrypted string from a given text.
 In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher,
@@ -212,7 +218,8 @@ Sample function and result :
 add_tags('i', 'Python') -> '<i>Python</i>'
 add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
 
-40) 	Write a function for division the number into groups by a multiple of 1000
+40) 	Write a function for division the
+number into groups by a multiple of 1000
 Example:
 division(1234567, “,”) -> “1,234,567”
 
@@ -265,7 +272,11 @@ Also count total number of all vowels and all consonants
 ##### Work with files
 50)     a) read file tasks.txt from your script
         b) count lines in this file
-        c) write first 10 strings from it into new file 10.txt
+        c) write first 10 lines from it into new file 10.txt
+
+# with open("filename", "r+", encoding='utf-8') as file:
+#    file.readlines()
+
 
 51)     a) Move the text from task 45 into a file.
         b) read text from it
