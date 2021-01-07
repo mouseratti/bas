@@ -1,6 +1,6 @@
 atomicwrites==1.2.1
 attrs==18.2.0
-lxml==4.2.5
+lxml==4.6.2
 more-itertools==4.3.0
 pkg-resources==0.0.0
 pluggy==0.8.0
